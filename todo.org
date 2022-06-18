@@ -1,6 +1,15 @@
-#+title: Todo
-* Rouge-like Top-down shooter mech-like shooter
-* MVP: Character can shoot bullets and hit enemies
-** Zombie-ish AI; follow the player
-* Lovers in a strange space-time; different kinds of weapons
-* Inventory system of resident evil
+#+title: 17gun
+* Concept
+** Rogue-like Top-down shooter mech-like shooter
+* MVPs:
+** Friday
+Character can shoot bullets and hit enemies
+** Saturday
+ - Solid but uninspired TDS
+ - Basic level generation
+ - Main Menu and Settings
+* AI and enemies
+Zombie-ish AI; follow the player
+* Player abilities
+ - Lovers in a dangerous space-time; different kinds of weapons
+ - Inventory system of resident evil
