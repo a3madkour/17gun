@@ -3,6 +3,7 @@ extends KinematicBody2D
 const MOVE_SPEED = 300
 
 onready var raycast = $RayCast2D
+var Bullet = load("res://Bullet.tscn")
 
 func _ready():
 	yield(get_tree(), "idle_frame")
@@ -25,9 +26,14 @@ func _physics_process(delta):
 	global_rotation = atan2(look_vec.y, look_vec.x)
 	
 	if Input.is_action_just_pressed("shoot"):
-		var coll = raycast.get_collider()
-		if raycast.is_colliding() and coll.has_method("kill"):
-			coll.kill()
+		shoot()
+		# var coll = raycast.get_collider()
+		# if raycast.is_colliding() and coll.has_method("kill"):
+			# coll.kill()
 
+func shoot():
+	var b = Bullet.instance()
+	owner.add_child(b)
+	b.transform = $Muzzle.global_transform
 func kill():
 	get_tree().reload_current_scene()
