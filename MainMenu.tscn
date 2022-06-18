@@ -16,6 +16,8 @@ margin_bottom = 68.0
 [node name="Play" type="Button" parent="VBoxContainer"]
 margin_right = 100.0
 margin_bottom = 20.0
+focus_neighbour_top = NodePath("../Quit")
+focus_previous = NodePath(".")
 text = "Play"
 
 [node name="Settings" type="Button" parent="VBoxContainer"]
@@ -28,6 +30,8 @@ text = "Settings"
 margin_top = 48.0
 margin_right = 100.0
 margin_bottom = 68.0
+focus_neighbour_bottom = NodePath("../Play")
+focus_next = NodePath("../Play")
 text = "Quit"
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_Play_pressed"]

@@ -1,4 +1,4 @@
-extends MarginContainer
+extends Control
 
 
 # Declare member variables here. Examples:
@@ -8,20 +8,16 @@ extends MarginContainer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$VBoxContainer/Play.grab_focus()
+	pass # Replace with function body.
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
 
-
-func _on_Play_pressed():
-	get_tree().change_scene("res://World.tscn")
-
-
-func _on_Settings_pressed():
-	get_tree().change_scene("res://Settings.tscn")
+func _on_BeastMode_toggled(button_pressed):
+	pass # Replace with function body.
 
 
-func _on_Quit_pressed():
-	get_tree().quit()
+func _on_BackButton_pressed():
+	get_tree().change_scene("res://MainMenu.tscn")
