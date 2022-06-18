@@ -25,4 +25,4 @@ func _on_Settings_pressed():
 
 
 func _on_Quit_pressed():
-	print("Quitting Game") # Replace with function body.
+	get_tree().quit()
