@@ -16,3 +16,10 @@ position = Vector2( 207.202, 122.992 )
 
 [node name="Zombie3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 784.488, 140.72 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 80.0
+margin_top = 80.0
+margin_right = 12.0
+margin_bottom = 20.0
+text = "Pause"
