@@ -36,4 +36,4 @@ func shoot():
 	owner.add_child(b)
 	b.transform = $Muzzle.global_transform
 func kill():
-	get_tree().reload_current_scene()
+	get_tree().change_scene("res://MainMenu.tscn")
