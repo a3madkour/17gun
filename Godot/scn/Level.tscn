@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://res/SpaceTile/Wall type 1/Bottom/WallCenterBottom1.png" type="Texture" id=1]
 [ext_resource path="res://res/SpaceTile/PoleTile.png" type="Texture" id=2]
+[ext_resource path="res://gdexample.gdns" type="Script" id=3]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
@@ -60,3 +61,4 @@ tile_set = SubResource( 1 )
 cell_size = Vector2( 128, 128 )
 format = 1
 tile_data = PoolIntArray( 0, 0, 0, 65536, 1, 0, 65539, 0, 0, 65542, 0, 0, 131077, 0, 0, 131079, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0 )
+script = ExtResource( 3 )
