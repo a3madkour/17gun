@@ -1,10 +1,11 @@
-extends Control
+extends Node
 
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 
+var isBeastMode = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,10 +15,3 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-func _on_BeastMode_toggled(button_pressed):
-	GameManager.isBeastMode = button_pressed
-
-
-func _on_BackButton_pressed():
-	get_tree().change_scene("res://scn/MainMenu.tscn")

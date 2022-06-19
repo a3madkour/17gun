@@ -12,13 +12,16 @@
 position = Vector2( 527.424, 335.734 )
 
 [node name="Zombie" parent="." instance=ExtResource( 2 )]
-position = Vector2( 242.659, 403.324 )
+position = Vector2( 853, 526 )
+move_speed = 50
 
 [node name="Zombie2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 207.202, 122.992 )
+move_speed = 150
 
 [node name="Zombie3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 784.488, 140.72 )
+position = Vector2( 732, -26 )
+move_speed = 200
 
 [node name="Level" parent="." instance=ExtResource( 3 )]
 script = ExtResource( 4 )

@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const MOVE_SPEED = 200
+export var move_speed = 200
 
 onready var raycast = $RayCast2D
 
@@ -8,6 +8,8 @@ var player = null
 
 func _ready():
 	add_to_group("zombies")
+	if GameManager.isBeastMode:
+		move_speed = move_speed * 2
 
 func _physics_process(delta):
 	if player == null:
@@ -16,7 +18,7 @@ func _physics_process(delta):
 	var vec_to_player = player.global_position - global_position
 	vec_to_player = vec_to_player.normalized()
 	global_rotation = atan2(vec_to_player.y, vec_to_player.x)
-	move_and_collide(vec_to_player * MOVE_SPEED * delta)
+	move_and_collide(vec_to_player * move_speed * delta)
 	
 	if raycast.is_colliding():
 		var coll = raycast.get_collider()
