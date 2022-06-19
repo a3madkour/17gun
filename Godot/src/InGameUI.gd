@@ -12,8 +12,12 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	if Input.is_action_just_pressed("ui_pause"):
+		if get_tree().paused:
+			resume()
+		else:
+			pause()
 
 
 func pause():
