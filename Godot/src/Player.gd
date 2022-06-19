@@ -3,7 +3,7 @@ extends KinematicBody2D
 const MOVE_SPEED = 300
 
 onready var raycast = $RayCast2D
-var Bullet = load("res://Bullet.tscn")
+var Bullet = load("res://scn/Bullet.tscn")
 
 func _ready():
 	yield(get_tree(), "idle_frame")
