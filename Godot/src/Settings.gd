@@ -20,4 +20,4 @@ func _on_BeastMode_toggled(button_pressed):
 
 
 func _on_BackButton_pressed():
-	get_tree().change_scene("res://MainMenu.tscn")
+	get_tree().change_scene("res://scn/MainMenu.tscn")

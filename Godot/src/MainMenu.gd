@@ -16,11 +16,11 @@ func _ready():
 
 
 func _on_Play_pressed():
-	get_tree().change_scene("res://World.tscn")
+	get_tree().change_scene("res://scn/World.tscn")
 
 
 func _on_Settings_pressed():
-	get_tree().change_scene("res://Settings.tscn")
+	get_tree().change_scene("res://scn/Settings.tscn")
 
 
 func _on_Quit_pressed():
